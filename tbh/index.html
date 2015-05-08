@@ -27,13 +27,36 @@
     </section>
   </header>
 
-  <div id="reserve">
-    <!-- reserve -->
-  </div>
+  <section id="reserve">
+    <h5><img src="images/t-reserve.png" alt="ご予約"></h5>
+    <form action="reserve.php">
+      <p>日程</p>
+      <select name="ymd" id="ymd">
+        <option value="20150401">2015年04月1日</option>
+        <option value="20150402">2015年04月2日</option>
+      </select>
+      <p>大人</p>
+      <select name="adalt" id="adalt">
+        <option value="ad1">1人</option>
+        <option value="ad2">2人</option>
+      </select>
+      <p>子供</p>
+      <select name="child" id="child">
+        <option value="ch1">1人</option>
+        <option value="ch2">2人</option>
+      </select>
+    </form>
+    <a href="#">
+      <p class="search-button">検索</p>
+    </a>
+    <a href="#">
+      <p class="check-button">ご予約の確認・取り消し</p>
+    </a>
+  </section>
 
 
   <div id="pickup-cont">
-    <div id="pickup-inner">
+    <section id="pickup-inner">
       <div id="pickup-left">
         <img src="assets/images/pickup.jpg" alt="美味しい朝食">
       </div>
@@ -44,17 +67,19 @@
             十五穀米やビタミン食物繊維たっぷりのスムージーもご用意。<br>
             ご宿泊なさらない方の朝食のみのご予約も承っております。<br>
         </p>
-        <p id="reserve-button">ご予約はこちら</p>
+        <a href="#">
+          <p class="reserve-button">ご予約はこちら</p>
+        </a>
       </div>
-    </div>
+    </section>
   </div>
   <!-- pickup -->
 
 
   <div id="plan-cont">
-    <div id="plan-inner">
+    <section id="plan-inner">
     <h3><img src="assets/images/t-plan.png" alt="おすすめプラン"></h3>
-      <div class="plan">
+      <section class="plan">
         <figure class="shadow">
           <a href="#" class="thumb">
             <img src="assets/images/plan-1.jpg" alt="記念日プラン">
@@ -67,9 +92,9 @@
             </a>
           </figcaption>
         </figure>
-      </div>
+      </section>
 
-      <div class="plan">
+      <section class="plan">
         <figure class="shadow">
           <a href="#" class="thumb">
             <img src="assets/images/plan-2.jpg" alt="美食プラン">
@@ -82,9 +107,9 @@
             </a>
           </figcaption>
         </figure>
-      </div>
+      </section>
 
-      <div class="plan">
+      <section class="plan">
         <figure class="shadow">
           <a href="#" class="thumb">
             <img src="assets/images/plan-3.jpg" alt="癒しプラン">
@@ -97,9 +122,9 @@
             </a>
           </figcaption>
         </figure>
-      </div>
+      </section>
 
-      <div class="plan">
+      <section class="plan">
         <figure class="shadow">
           <a href="#" class="thumb">
             <img src="assets/images/plan-4.jpg" alt="ビジネスプラン">
@@ -112,18 +137,18 @@
             </a>
           </figcaption>
         </figure>
-      </div>
+      </section>
 
       <div class="more-cont">
         <p class="more">全てのプランを見る</p>
       </div>
-    </div>
+    </section>
   </div>
   <!-- recommended plan -->
 
 
   <div id="news-cont">
-    <div id="news-inner">
+    <section id="news-inner">
       <h3><img src="assets/images/t-news.png" alt="お知らせ"></h3>
       <dl>
         <dt><span class="tag">レストラン</span>2015/04/10</dt>
@@ -140,7 +165,7 @@
         <dd>4月から春の新プランを追加いたしました。</dd>
       </dl>
       <p class="more">全てのプランを見る</p>
-    </div>
+    </section>
   </div>
   <!-- news -->
 
@@ -159,12 +184,12 @@
           <li><a href="#">中文（繁体字）</a></li>
         </ul>
       </div>
-      <div>
+      <section>
         <h1><img src="assets/images/logo-2.png" alt="東京ベイサイドホテル"></h1>
         <p>〒135-0063&nbsp;東京都江東区有明3丁目1番15号<br>
             TEL：03-6700-0001（代表）&nbsp;&nbsp;FAX：03-6700-0007</p>
-      </div>
-      <p id="credit">&copy;&nbsp;Tokyo Bayside Hotel</p>
+      </section>
+      <p id="credit"><small>&copy;&nbsp;Tokyo Bayside Hotel</small></p>
     </div>
   </footer>
 
