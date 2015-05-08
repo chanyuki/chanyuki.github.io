@@ -197,28 +197,32 @@
   <section id="reserve">
     <h5><img src="images/t-reserve.png" alt="ご予約"></h5>
     <form action="reserve.php">
-      <p>日程</p>
-      <select name="ymd" id="ymd">
-        <option value="20150401">2015年04月1日</option>
-        <option value="20150402">2015年04月2日</option>
-      </select>
-      <p>大人</p>
-      <select name="adalt" id="adalt">
-        <option value="ad1">1人</option>
-        <option value="ad2">2人</option>
-      </select>
-      <p>子供</p>
-      <select name="child" id="child">
-        <option value="ch1">1人</option>
-        <option value="ch2">2人</option>
-      </select>
+    <dl>
+      <dt>日程</dt>
+      <dd>
+        <select name="ymd" id="ymd">
+          <option value="20150401">2015年04月1日</option>
+          <option value="20150402">2015年04月2日</option>
+        </select>
+      </dd>
+      <dt>大人</dt>
+      <dd>
+        <select name="adalt" id="adalt">
+          <option value="ad1">1人</option>
+          <option value="ad2">2人</option>
+        </select>
+      </dd>
+      <dt>子供</dt>
+      <dd>
+        <select name="child" id="child">
+          <option value="ch1">1人</option>
+          <option value="ch2">2人</option>
+        </select>
+      </dd>
+    </dl>
     </form>
-    <a href="#">
-      <p class="search-button">検索</p>
-    </a>
-    <a href="#">
-      <p class="check-button">ご予約の確認・取り消し</p>
-    </a>
+    <div class="search-button"><a href="#">検索</a></div>
+    <div class="check-button"><a href="#">ご予約の確認・取り消し</a></div>
   </section>
 
 
@@ -309,11 +313,9 @@
           <li><a href="#">中文（繁体字）</a></li>
         </ul>
       </div>
-      <section>
-        <h1><img src="images/logo-2.png" alt="東京ベイサイドホテル"></h1>
-        <p>〒135-0063&nbsp;東京都江東区有明3丁目1番15号<br>
-            TEL：03-6700-0001（代表）&nbsp;&nbsp;FAX：03-6700-0007</p>
-      </section>
+      <h1><img src="images/logo-2.png" alt="東京ベイサイドホテル"></h1>
+      <p>〒135-0063&nbsp;東京都江東区有明3丁目1番15号<br>
+          TEL：03-6700-0001（代表）&nbsp;&nbsp;FAX：03-6700-0007</p>
       <p id="credit"><small>&copy;&nbsp;Tokyo Bayside Hotel</small></p>
     </div>
   </footer>
