@@ -9,32 +9,62 @@ body {
 header {
   width: 100%;
   height: 430px;
+  padding-top:15px;
   background-size: cover;
-  background-image: url(../images/main.jpg);
+  background-image: url(../images/main.jpg) ;
   color: #fff;
   font-size: 16px;
 }
 /*
-#cover img {
+.cover img {
   width: 100%;
   max-width: 1024px;
 }
 */
-.contents_header {
+.inner {
   width: 860px;
-  height: 100%;
   margin: 0 auto;
-  padding-top: 15px;
+  overflow: hidden;
 }
-nav li {
-  display: inline;
+header h1 {
+  float:left;
 }
-.reserve {
+
+nav {
+  float: right;
+  margin-top: 4px;
+}
+nav ul li {
+  float: left;
+  text-align: center;
+  margin-left: 30px;
+}
+nav ul li span {
+  display: block;
+  color: rgba(0,0,0,0.3);
+  font-size: 14px;
+  font-family: 'Helvetica-Oblique';
+  margin: 2px;
+}
+nav ul li a:link {
+  color: #666;
+  text-decoration: none;
+  width: 150px;
+}
+
+
+.reserve_wrapper {
   width: 100%;
   height: 60px;
   background-color: #f8f6ef;
 }
-.search-button {
+.reserve-list {
+  overflow: hidden;
+}
+.reserve-list dt, .reserve-list dd {
+  float: left;
+}
+.search-button a:link {
 	-moz-box-shadow:inset 0px 0px 1px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 0px 1px 0px #ffffff;
 	box-shadow:inset 0px 0px 1px 0px #ffffff;
@@ -56,8 +86,20 @@ nav li {
 	font-size:14px;
 	padding:10px 30px;
 	text-decoration:none;
+  position: relative;
+  top: 1px;
 }
-.search-button:hover {
+.search-button a:visited {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #22abba), color-stop(1, #22abba));
+	background:-moz-linear-gradient(top, #22abba 5%, #22abba 100%);
+	background:-webkit-linear-gradient(top, #22abba 5%, #22abba 100%);
+	background:-o-linear-gradient(top, #22abba 5%, #22abba 100%);
+	background:-ms-linear-gradient(top, #22abba 5%, #22abba 100%);
+	background:linear-gradient(to bottom, #22abba 5%, #22abba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#22abba', endColorstr='#22abba',GradientType=0);
+	background-color:#22abba;
+}
+.search-button a:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #22abba), color-stop(1, #22abba));
 	background:-moz-linear-gradient(top, #22abba 5%, #22abba 100%);
 	background:-webkit-linear-gradient(top, #22abba 5%, #22abba 100%);
@@ -67,21 +109,17 @@ nav li {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#22abba', endColorstr='#22abba',GradientType=0);
 	background-color:#22abba;
 }
-.search-button:active {
-	position: relative;
-	top: 1px;
+.search-button a:active {
+
 }
+
 
 .pickup_wrapper {
   width: 100%;
   height: 226px;
   background-color: #fff;
   padding: 44px 0 44px 0;
-}
-.pickup_contents {
-  width: 860px;
-  height: 100%;
-  margin: 0 auto;
+  overflow: hidden;
 }
 .pickup-left {
   float: left;
@@ -93,7 +131,9 @@ nav li {
   width: 432px;
   height: 223px;
   position: relative;
-  line-height: 26px;
+}
+.pickup-right p {
+  line-height: 2.4;
 }
 h2 img {
   margin-bottom: 12px;
@@ -118,7 +158,7 @@ h2 img {
 	cursor:pointer;
 	color:#ffffff;
 	font-size:12px;
-	padding:1px 42px;
+	padding:8px 42px;
 	text-decoration:none;
 	position: absolute;
 	bottom: 0;
@@ -140,26 +180,23 @@ h2 img {
 }
 
 
-
 .plan_wrapper {
   width: 100%;
   height: 515px;
   background-color: #f8f6ef;
   padding: 44px 0 44px 0;
 }
-.plan_contents {
-  width: 860px;
-  height: 100%;
-  background-color: #fff;
-  margin: 0 auto;
-}
-.plan_contents h3, .news_contents h3 {
+.inner h3, .inner h3 {
   text-align: center;
+  margin-bottom: 34px;
 }
 .plan {
-  margin-right: 15px;
+  margin-right: 32px;
   float: left;
-  width: 196px;
+  width: 191px;
+}
+.plan_wrapper .inner div:nth-child(5) {
+  margin-right: 0 !important;
 }
 .plan img {
   -webkit-border-top-left-radius: 2px;
@@ -170,29 +207,53 @@ h2 img {
   border-top-right-radius: 2px;
 }
 figure {
+  width: 191px;
+  height: 133px;
   display: block;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  background-color: #fff;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-figcaption{
-  margin: 0 20px 0 20px;
+.caption {
+  width: 191px;
+  height: 165px;
+  background-color: #fff;
   text-align: center;
-  padding: 0 0 10px 0;
 }
-figcaption h4 {
-  margin-bottom: 10px;
+.caption h4 {
+  padding: 20px 0 14px 0;
   font-size: 21px;
+  font-family: "ヒラギノ明朝 Pro","Hiragino Mincho Pro"; font-weight: bold;
+}
+.caption p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 .more-button {
-	-moz-box-shadow:inset 0px 0px 1px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 0px 1px 0px #ffffff;
-	box-shadow:inset 0px 0px 1px 0px #ffffff;
+	-moz-box-shadow: inset 0px 0px 1px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 0px 1px 0px #ffffff;
+	box-shadow: inset 0px 0px 1px 0px #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #22abba), color-stop(1, #22abba));
+	background: -moz-linear-gradient(top, #22abba 5%, #22abba 100%);
+	background: -webkit-linear-gradient(top, #22abba 5%, #22abba 100%);
+	background: -o-linear-gradient(top, #22abba 5%, #22abba 100%);
+	background: -ms-linear-gradient(top, #22abba 5%, #22abba 100%);
+	background: linear-gradient(to bottom, #22abba 5%, #22abba 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#22abba', endColorstr='#22abba',GradientType=0);
+	background-color: #22abba;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #22abba;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 7px 46px;
+	text-decoration: none;
+}
+.more-button a:visited {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #22abba), color-stop(1, #22abba));
 	background:-moz-linear-gradient(top, #22abba 5%, #22abba 100%);
 	background:-webkit-linear-gradient(top, #22abba 5%, #22abba 100%);
@@ -201,18 +262,8 @@ figcaption h4 {
 	background:linear-gradient(to bottom, #22abba 5%, #22abba 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#22abba', endColorstr='#22abba',GradientType=0);
 	background-color:#22abba;
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
-	border-radius:2px;
-	border:1px solid #22abba;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:12px;
-	padding:1px 42px;
-	text-decoration:none;
 }
-.more-button:hover {
+.more-button a:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #22abba), color-stop(1, #22abba));
 	background:-moz-linear-gradient(top, #22abba 5%, #22abba 100%);
 	background:-webkit-linear-gradient(top, #22abba 5%, #22abba 100%);
@@ -222,36 +273,75 @@ figcaption h4 {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#22abba', endColorstr='#22abba',GradientType=0);
 	background-color:#22abba;
 }
-.more-button:active {
-	position:relative;
-	top:1px;
+.more-button a:active {
+
 }
 .shadow {
   -webkit-box-shadow: 0 14px 10px -10px rgba(0, 0, 0, 0.4);
   box-shadow: 0 14px 10px -10px rgba(0, 0, 0, 0.4);
 }
-.more_wrapper {
+.more-all_wrapper {
   width: 100%;
   height: 60px;
+  clear: both;
+  position: relative;
+}
+.more-all_wrapper .more {
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
+.more-all_wrapper .more p {
+  color: #666;
+  font-size: 13;
+  text-decoration: none;
+  background: url(../images/chevron.png) left center no-repeat;
+  padding-left: 10px;
+}
 .news_wrapper {
   width: 100%;
   height: 515px;
   background-color: #fff;
   padding: 44px 0 44px 0;
 }
-.news_contents {
-  width: 860px;
-  height: 100%;
-  background-color: #ccc;
-  margin: 0 auto;
+.news_wrapper dl {
+  border-bottom: 1px rgba(0,0,0,0.1) solid;
+  padding: 23px 0;
+  overflow: hidden;
 }
-dl {
-
+.news_wrapper dl:nth-child(4){
+  border-bottom: none;
 }
-.tag {
-
+.news_wrapper dt {
+  float: left;
+  width: 90px;
+  background-color: #f7f0d5;
+  padding: 6px 0;
+  text-align: center;
+}
+.news-ymd {
+  float: left;
+  width: 102px;
+  padding: 6px 0;
+  margin-left: 25px;
+}
+.news-cont {
+  float: left;
+  width: 613px;
+  padding: 6px 0;
+}
+.news-cont a:link {
+  color: #666;
+}
+.news-cont a:visited {
+  color: #666;
+}
+.news-cont a:hover {
+  color: #ccc;
+}
+.news-cont a:active {
+  color: #ccc;
 }
 
 footer {
@@ -259,12 +349,6 @@ footer {
   height: 258px;
   background-color: #22abba;
   padding: 20px 0 20px 0;
-}
-.footer_contents {
-  width: 860px;
-  height: 100%;
-  background-color: #22abba;
-  margin: 0 auto;
   text-align: center;
   position: relative;
 }

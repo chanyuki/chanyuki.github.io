@@ -9,10 +9,10 @@
 </head>
 <body>
   <header>
-    <div class="cover">
+<!-- <div class="cover">
       <img src="assets/images/main.jpg" alt="東京ベイサイドホテル">
-    </div>
-    <div class="header_contents">
+    </div> -->
+    <div class="inner">
       <h1><img src="assets/images/logo.png" alt="東京ベイサイドホテル"></h1>
       <nav>
         <ul>
@@ -28,41 +28,43 @@
   <!-- header -->
 
   <div class="reserve_wrapper">
-    <section class="reserve_contents">
-      <h5><img src="images/t-reserve.png" alt="ご予約"></h5>
-      <form action="reserve.php">
-      <dl>
-        <dt>日程</dt>
-        <dd>
-          <select name="ymd" class="ymd">
-            <option value="20150401">2015年04月1日</option>
-            <option value="20150402">2015年04月2日</option>
-          </select>
-        </dd>
-        <dt>大人</dt>
-        <dd>
-          <select name="adalt" class="adalt">
-            <option value="ad1">1人</option>
-            <option value="ad2">2人</option>
-          </select>
-        </dd>
-        <dt>子供</dt>
-        <dd>
-          <select name="child" class="child">
-            <option value="ch1">1人</option>
-            <option value="ch2">2人</option>
-          </select>
-        </dd>
-      </dl>
-      </form>
-      <div class="search-button"><a href="#">検索</a></div>
-      <div class="check-button"><a href="#">ご予約の確認・取り消し</a></div>
+    <section class="inner">
+      <div class="reserve-list">
+        <h5><img src="assets/images/t-reserve.png" alt="ご予約"></h5>
+        <form action="reserve.php">
+        <dl>
+          <dt>日程</dt>
+          <dd>
+            <select name="ymd" class="ymd">
+              <option value="20150401">2015年04月1日</option>
+              <option value="20150402">2015年04月2日</option>
+            </select>
+          </dd>
+          <dt>大人</dt>
+          <dd>
+            <select name="adalt" class="adalt">
+              <option value="ad1">1人</option>
+              <option value="ad2">2人</option>
+            </select>
+          </dd>
+          <dt>子供</dt>
+          <dd>
+            <select name="child" class="child">
+              <option value="ch1">1人</option>
+              <option value="ch2">2人</option>
+            </select>
+          </dd>
+          <div class="search-button"><a href="#">検索</a></div>
+          <div class="check-button"><a href="#">ご予約の確認・取り消し</a></div>
+        </dl>
+        </form>
+      </div>
     </section>
   </div>
   <!-- .reserve_wrapper -->
 
   <div class="pickup_wrapper">
-    <section class="pickup_contents">
+    <section class="inner">
       <div class="pickup-left">
         <img src="assets/images/pickup.jpg" alt="美味しい朝食">
       </div>
@@ -74,7 +76,7 @@
             ご宿泊なさらない方の朝食のみのご予約も承っております。<br>
         </p>
         <a href="#">
-          <p class="reserve-button">ご予約はこちら</p>
+          <div class="reserve-button">ご予約はこちら</div>
         </a>
       </div>
     </section>
@@ -83,70 +85,70 @@
 
 
   <div class="plan_wrapper">
-    <section class="plan_contents">
-    <h3><img src="images/t-plan.png" alt="おすすめプラン"></h3>
+    <section class="inner">
+    <h3><img src="assets/images/t-plan.png" alt="おすすめプラン"></h3>
 
-      <section class="plan">
+      <div class="plan">
         <figure>
           <a href="#" class="thumb">
-            <img src="images/plan-1.jpg" alt="記念日プラン">
+            <img src="assets/images/plan-1.jpg" alt="記念日プラン">
           </a>
         </figure>
-        <h4>記念日プラン</h4>
-        <p>恋人やご友人との特別な日に<br>スペシャルな時間を</p>
-        <div>
+        <div class="caption">
+          <h4>記念日プラン</h4>
+          <p>恋人やご友人との特別な日に<br>スペシャルな時間を</p>
           <a href="#">
-            <p class="more-button">詳しく見る</p>
+            <div class="more-button">詳しく見る</div>
           </a>
         </div>
-      </section>
+      </div>
 
-      <section class="plan">
+      <div class="plan">
         <figure>
           <a href="#" class="thumb">
-            <img src="images/plan-2.jpg" alt="美食プラン">
+            <img src="assets/images/plan-2.jpg" alt="美食プラン">
           </a>
         </figure>
-        <h4>美食プラン</h4>
-        <p>美味しさと健康にこだわった<br>当ホテル自慢のお食事</p>
-        <div>
+        <div class="caption">
+          <h4>美食プラン</h4>
+          <p>美味しさと健康にこだわった<br>当ホテル自慢のお食事</p>
           <a href="#">
-            <p class="more-button">詳しく見る</p>
+            <div class="more-button">詳しく見る</div>
           </a>
         </div>
-      </section>
+      </div>
 
-      <section class="plan">
+      <div class="plan">
         <figure>
           <a href="#" class="thumb">
-            <img src="images/plan-3.jpg" alt="癒しプラン">
+            <img src="assets/images/plan-3.jpg" alt="癒しプラン">
           </a>
         </figure>
-        <h4>癒しプラン</h4>
-        <p>優しいアロマに包まれながら<br>本格的なマッサージを体験</p>
-        <div>
+        <div class="caption">
+          <h4>癒しプラン</h4>
+          <p>優しいアロマに包まれながら<br>本格的なマッサージを体験</p>
           <a href="#">
-            <p class="more-button">詳しく見る</p>
+            <div class="more-button">詳しく見る</div>
           </a>
         </div>
-      </section>
+      </div>
 
-      <section class="plan">
+      <div class="plan">
         <figure>
           <a href="#" class="thumb">
-            <img src="images/plan-4.jpg" alt="ビジネスプラン">
+            <img src="assets/images/plan-4.jpg" alt="ビジネスプラン">
           </a>
         </figure>
-        <h4>ビジネスプラン</h4>
-        <p>シンプルにご宿泊できる<br>お得な定番プラン</p>
-        <div>
+        <div class="caption">
+          <h4>ビジネスプラン</h4>
+          <p>シンプルにご宿泊できる<br>お得な定番プラン</p>
           <a href="#">
-            <p class="more-button">詳しく見る</p>
+            <div class="more-button">詳しく見る</div>
           </a>
         </div>
-      </section>
+      </div>
 
-      <div class="more_wrapper">
+      <div class="more-all_wrapper">
         <a href="#">
           <p class="more">全てのプランを見る</p>
         </a>
@@ -157,30 +159,38 @@
 
 
   <div class="news_wrapper">
-    <section class="news_contents">
+    <section class="inner">
       <h3><img src="assets/images/t-news.png" alt="お知らせ"></h3>
       <dl>
-        <dt><span class="tag">レストラン</span>2015/04/10</dt>
-        <dd>4月の朝食イベント『いちごフェア』開催のご案内。</dd>
+        <dt>レストラン</dt>
+        <dd class="news-ymd">2015/04/10<dd>
+        <dd class="news-cont"><a href="#">『4月の朝食イベント『いちごフェア』開催のご案内。</a></dd>
       </dl>
-      <hr>
       <dl>
-        <dt><span class="tag">その他</span>2015/04/03</dt>
-        <dd>『朝食の美味しいホテル100選』に掲載されました。</dd>
+        <dt>その他</dt>
+        <dd class="news-ymd">2015/04/03</dd>
+        <dd class="news-cont"><a href="#">『朝食の美味しいホテル100選』に掲載されました。</a></dd>
       </dl>
-      <hr>
       <dl>
-        <dt><span class="tag">宿泊</span>2015/04/01</dt>
-        <dd>4月から春の新プランを追加いたしました。</dd>
+        <dt>宿泊</dt>
+        <dd class="news-ymd">2015/04/01</dd>
+        <dd class="news-cont"><a href="#">4月から春の新プランを追加いたしました。</a></dd>
       </dl>
-      <p class="more">全てのプランを見る</p>
+
+      <div class="more-all_wrapper">
+        <div class="more">
+          <a href="#">
+            <p class="chevron">全てのプランを見る</p>
+          </a>
+        </div>
+      </div>
     </section>
   </div>
   <!-- .news_wrapper -->
 
 
   <footer>
-    <div class="footer_contents">
+    <div class="inner">
       <div id="favor-nav">
         <ul>
           <li><a href="#">サイトマップ</a></li>
