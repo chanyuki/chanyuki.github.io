@@ -1,4 +1,4 @@
-* {
+body {
   font-size: 12px;
   color: #666;
   font-family:'Lucida Sans Unicode','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ Pro','Hiragino Kaku Gothic Pro' Meiryo, sans-serif;
@@ -20,7 +20,7 @@ header {
   max-width: 1024px;
 }
 */
-#header-inner {
+.contents_header {
   width: 860px;
   height: 100%;
   margin: 0 auto;
@@ -29,7 +29,7 @@ header {
 nav li {
   display: inline;
 }
-#reserve {
+.reserve {
   width: 100%;
   height: 60px;
   background-color: #f8f6ef;
@@ -72,23 +72,23 @@ nav li {
 	top: 1px;
 }
 
-#pickup-cont {
+.pickup_wrapper {
   width: 100%;
   height: 226px;
   background-color: #fff;
   padding: 44px 0 44px 0;
 }
-#pickup-inner {
+.pickup_contents {
   width: 860px;
   height: 100%;
   margin: 0 auto;
 }
-#pickup-left {
+.pickup-left {
   float: left;
   width: 365px;
   height: 223px;
 }
-#pickup-right {
+.pickup-right {
   float: right;
   width: 432px;
   height: 223px;
@@ -98,7 +98,7 @@ nav li {
 h2 img {
   margin-bottom: 12px;
 }
-#reserve-button {
+.reserve-button {
 	-moz-box-shadow:inset 0px 0px 1px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 0px 1px 0px #ffffff;
 	box-shadow:inset 0px 0px 1px 0px #ffffff;
@@ -124,7 +124,7 @@ h2 img {
 	bottom: 0;
 	right: 0;
 }
-#reserve-button:hover {
+.reserve-button:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #22abba), color-stop(1, #22abba));
 	background:-moz-linear-gradient(top, #22abba 5%, #22abba 100%);
 	background:-webkit-linear-gradient(top, #22abba 5%, #22abba 100%);
@@ -134,26 +134,26 @@ h2 img {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#22abba', endColorstr='#22abba',GradientType=0);
 	background-color:#22abba;
 }
-#reserve-button:active {
+.reserve-button:active {
 	position:relative;
 	top:1px;
 }
 
 
 
-#plan-cont {
+.plan_wrapper {
   width: 100%;
   height: 515px;
   background-color: #f8f6ef;
   padding: 44px 0 44px 0;
 }
-#plan-inner {
+.plan_contents {
   width: 860px;
   height: 100%;
   background-color: #fff;
   margin: 0 auto;
 }
-#plan-inner h3, #news-inner h3 {
+.plan_contents h3, .news_contents h3 {
   text-align: center;
 }
 .plan {
@@ -230,18 +230,18 @@ figcaption h4 {
   -webkit-box-shadow: 0 14px 10px -10px rgba(0, 0, 0, 0.4);
   box-shadow: 0 14px 10px -10px rgba(0, 0, 0, 0.4);
 }
-.more-cont {
+.more_wrapper {
   width: 100%;
   height: 60px;
 }
 
-#news-cont {
+.news_wrapper {
   width: 100%;
   height: 515px;
   background-color: #fff;
   padding: 44px 0 44px 0;
 }
-#news-inner {
+.news_contents {
   width: 860px;
   height: 100%;
   background-color: #ccc;
@@ -260,7 +260,7 @@ footer {
   background-color: #22abba;
   padding: 20px 0 20px 0;
 }
-#footer-inner {
+.footer_contents {
   width: 860px;
   height: 100%;
   background-color: #22abba;
@@ -268,7 +268,7 @@ footer {
   text-align: center;
   position: relative;
 }
-#favor-nav li {
+.favor-nav li {
   color: #fff;
   font-size: 14px;
   line-height: 30px;
@@ -291,8 +291,3 @@ footer p#credit {
   right: 0;
   left: 0;
 }
-
-
-/*---------------------------------
-http://www.anariel.com/freebix/を参照
---------------------------------*/

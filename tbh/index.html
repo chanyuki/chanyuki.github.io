@@ -9,12 +9,10 @@
 </head>
 <body>
   <header>
-    <!--
-    <div id="cover">
+    <div class="cover">
       <img src="assets/images/main.jpg" alt="東京ベイサイドホテル">
     </div>
-     -->
-    <div id="header-inner">
+    <div class="header_contents">
       <h1><img src="assets/images/logo.png" alt="東京ベイサイドホテル"></h1>
       <nav>
         <ul>
@@ -27,44 +25,48 @@
       </nav>
     </div>
   </header>
+  <!-- header -->
 
-  <section id="reserve">
-    <h5><img src="images/t-reserve.png" alt="ご予約"></h5>
-    <form action="reserve.php">
-    <dl>
-      <dt>日程</dt>
-      <dd>
-        <select name="ymd" id="ymd">
-          <option value="20150401">2015年04月1日</option>
-          <option value="20150402">2015年04月2日</option>
-        </select>
-      </dd>
-      <dt>大人</dt>
-      <dd>
-        <select name="adalt" id="adalt">
-          <option value="ad1">1人</option>
-          <option value="ad2">2人</option>
-        </select>
-      </dd>
-      <dt>子供</dt>
-      <dd>
-        <select name="child" id="child">
-          <option value="ch1">1人</option>
-          <option value="ch2">2人</option>
-        </select>
-      </dd>
-    </dl>
-    </form>
-    <div class="search-button"><a href="#">検索</a></div>
-    <div class="check-button"><a href="#">ご予約の確認・取り消し</a></div>
-  </section>
+  <div class="reserve_wrapper">
+    <section class="reserve_contents">
+      <h5><img src="images/t-reserve.png" alt="ご予約"></h5>
+      <form action="reserve.php">
+      <dl>
+        <dt>日程</dt>
+        <dd>
+          <select name="ymd" class="ymd">
+            <option value="20150401">2015年04月1日</option>
+            <option value="20150402">2015年04月2日</option>
+          </select>
+        </dd>
+        <dt>大人</dt>
+        <dd>
+          <select name="adalt" class="adalt">
+            <option value="ad1">1人</option>
+            <option value="ad2">2人</option>
+          </select>
+        </dd>
+        <dt>子供</dt>
+        <dd>
+          <select name="child" class="child">
+            <option value="ch1">1人</option>
+            <option value="ch2">2人</option>
+          </select>
+        </dd>
+      </dl>
+      </form>
+      <div class="search-button"><a href="#">検索</a></div>
+      <div class="check-button"><a href="#">ご予約の確認・取り消し</a></div>
+    </section>
+  </div>
+  <!-- .reserve_wrapper -->
 
-  <div id="pickup-cont">
-    <section id="pickup-inner">
-      <div id="pickup-left">
+  <div class="pickup_wrapper">
+    <section class="pickup_contents">
+      <div class="pickup-left">
         <img src="assets/images/pickup.jpg" alt="美味しい朝食">
       </div>
-      <div id="pickup-right">
+      <div class="pickup-right">
         <h2><img src="assets/images/catchcopy.png" alt="贅沢な一日は、朝から始まる。"></h2>
         <p>東京ベイサイドホテルが誇る朝食は、<br>
             旬の食材とオーガニックにこだわった彩り豊かな野菜を使用。<br>
@@ -77,11 +79,11 @@
       </div>
     </section>
   </div>
-  <!-- pickup -->
+  <!-- .pickup_wapper -->
 
 
-  <div id="plan-cont">
-    <section id="plan-inner">
+  <div class="plan_wrapper">
+    <section class="plan_contents">
     <h3><img src="images/t-plan.png" alt="おすすめプラン"></h3>
 
       <section class="plan">
@@ -144,18 +146,18 @@
         </div>
       </section>
 
-      <div class="more-cont">
+      <div class="more_wrapper">
         <a href="#">
           <p class="more">全てのプランを見る</p>
         </a>
       </div>
     </section>
   </div>
-  <!-- recommended plan -->
+  <!-- .plan_wrapper -->
 
 
-  <div id="news-cont">
-    <section id="news-inner">
+  <div class="news_wrapper">
+    <section class="news_contents">
       <h3><img src="assets/images/t-news.png" alt="お知らせ"></h3>
       <dl>
         <dt><span class="tag">レストラン</span>2015/04/10</dt>
@@ -174,11 +176,11 @@
       <p class="more">全てのプランを見る</p>
     </section>
   </div>
-  <!-- news -->
+  <!-- .news_wrapper -->
 
 
   <footer>
-    <div id="footer-inner">
+    <div class="footer_contents">
       <div id="favor-nav">
         <ul>
           <li><a href="#">サイトマップ</a></li>
