@@ -58,7 +58,13 @@ nav ul li a:link {
 }
 .breadcrumbs li{
   display: inline-block;
+}
+.breadcrumbs li:after {
+  content: ">";
   margin: 0 5px 0 5px;
+}
+.breadcrumbs li:last-child:after {
+  content: none;
 }
 .breadcrumbs li a:link {
   color: #ccc;
@@ -272,8 +278,6 @@ h2 span {
   font-size: 16px;
   margin: 10px 0 0 5px;
 }
-
-
 
 .reserve_wrapper {
   width: 100%;
@@ -775,6 +779,12 @@ li.chevron2 {
   padding-left: 13px;
   padding-top: 2px;
   line-height: 4;
+}
+li.lang {
+  border-right: 1px #fff solid;
+}
+li.lang:nth-child(3) {
+  border-right: none;
 }
 .favor-nav a:link {
   color: #fff;

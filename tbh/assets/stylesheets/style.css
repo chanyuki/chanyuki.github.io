@@ -601,7 +601,7 @@ figure {
 
 .news_wrapper {
   width: 100%;
-  height: 515px;
+  height: 385px;
   background-color: #fff;
   padding: 44px 0 44px 0;
 }
@@ -674,6 +674,12 @@ li.chevron2 {
   padding-left: 13px;
   padding-top: 2px;
   line-height: 4;
+}
+li.lang {
+  border-right: 1px #fff solid;
+}
+li.lang:nth-child(3) {
+  border-right: none;
 }
 .favor-nav a:link {
   color: #fff;
