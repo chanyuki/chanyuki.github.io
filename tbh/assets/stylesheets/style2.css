@@ -34,6 +34,14 @@ nav a {
   text-align: center;
   margin-left: 30px;
 }
+nav .current:link , nav .current:visited {
+  color: #22abba;
+  cursor: default;
+}
+nav a.current span {
+  color: rgba(34,171,186,0.3);
+  cursor: default;
+}
 nav a span {
   display: block;
   color: rgba(0,0,0,0.3);
