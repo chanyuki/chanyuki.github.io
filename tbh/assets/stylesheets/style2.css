@@ -90,7 +90,8 @@ nav ul li a:link {
 }
 h2 {
   font-size: 27px;
-  font-family: "ヒラギノ明朝 Pro","Hiragino Mincho Pro"; font-weight: bold;
+  font-family: "ヒラギノ明朝 Pro","Hiragino Mincho Pro";
+  font-weight: bold;
   position: absolute;
   bottom: 0;
   margin-bottom: 20px;
@@ -174,16 +175,18 @@ h2 span {
   height: 910px;
   background-color: #f8f6ef;
   padding: 44px 0;
+  font-family: 'Helvetica','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ Pro','Hiragino Kaku Gothic Pro';
+  color: #666;
 }
 
-.roomgrade {
+.room-grade {
   text-align: center;
 }
-.roomgrade li {
+.room-grade li {
   display: inline-block;
-  margin: 0 5px 0 5px;
+  margin: 0 10px 0 10px;
 }
-.roomgrade-button_active {
+.room-grade-button_active {
   background-color: #d1c192;
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
@@ -195,7 +198,7 @@ h2 span {
   padding: 8px 42px;
   text-decoration: none;
 }
-.roomgrade-button a:link {
+.room-grade-button a:link {
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
   -webkit-border-radius: 17px;
@@ -206,7 +209,7 @@ h2 span {
   padding: 8px 48px;
   text-decoration: none;
 }
-.roomgrade-button a:visited {
+.room-grade-button a:visited {
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
   -webkit-border-radius: 17px;
@@ -217,7 +220,7 @@ h2 span {
   padding: 8px 48px;
   text-decoration: none;
 }
-.roomgrade-button a:hover {
+.room-grade-button a:hover {
   background-color: rgba(209,193,146,0.3);
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
@@ -233,7 +236,7 @@ h2 span {
   padding: 8px 48px;
   text-decoration: none;
 }
-.roomgrade-button a:active {
+.room-grade-button a:active {
   background-color: rgba(209,193,146,0.3);
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
@@ -250,6 +253,25 @@ h2 span {
   text-decoration: none;
 }
 
+.room-info_inner {
+  margin: 25px 0;
+}
+.room-info_1, .room-info_2 {
+  text-align: center;
+}
+.room-info {
+  display: inline-block;
+  margin: 20px 25px;
+}
+.room-info dd {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.room-info span {
+  font-size: 16px;
+  margin: 10px 0 0 5px;
+}
 
 
 
