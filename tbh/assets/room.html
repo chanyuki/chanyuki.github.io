@@ -49,13 +49,32 @@
   </div>
   <!-- .roomtype-main_wrapper -->
 
+
   <div class="roomtype-main-slide">
-    <!-- slide here -->
   </div>
+  <!-- slide -->
+  <script>
+    $(function(){
+      $(".thumbnail li") .click(function(){
+          var index = $(".thumbnail li").index(this);
+          console.log(index);
+          var targetImg = $(".thumbnail li:eq("+index+") a").attr("href");
+          $(".room-type-main-slide").css({'background-image':'url('+targetImg+')'});
+          return false;
+      });
+    });
+  </script>
+  <!-- slide script -->
   <div class="roomtype-main-slide-thumb">
-    <img src="images/thumbnails.png" alt="その他の写真">
-    <!-- slide-nav here -->
+    <ul class="thumbnail">
+      <li><a href="images/main.jpg"><img src="images/slider-img1.jpg" alt=""></a></li>
+      <li><a href="images/main.jpg"><img src="images/slider-img2.jpg" alt=""></a></li>
+      <li><a href="images/main.jpg"><img src="images/slider-img3.jpg" alt=""></a></li>
+      <li><a href="images/main.jpg"><img src="images/slider-img4.jpg" alt=""></a></li>
+    </ul>
   </div>
+  <!-- thumbnail -->
+
 
   <div class="roomtype-caption_wrapper">
     <section class="inner">
