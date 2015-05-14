@@ -240,7 +240,7 @@ h2 span {
   display: inline-block;
   margin: 0 10px 0 10px;
 }
-.room-grade-button_active {
+.room-grade ul li.active a:link {
   background-color: #d1c192;
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
@@ -249,10 +249,46 @@ h2 span {
   cursor:pointer;
   color: #fff;
   font-size: 12px;
-  padding: 8px 42px;
+  padding: 8px 48px;
   text-decoration: none;
 }
-.room-grade-button a:link {
+.room-grade ul li.active a:visited {
+  background-color: #d1c192;
+  border: 2px #d1c192 solid;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  border-radius: 17px;
+  cursor:pointer;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 48px;
+  text-decoration: none;
+}
+.room-grade ul li.active a:hover {
+  background-color: #d1c192;
+  border: 2px #d1c192 solid;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  border-radius: 17px;
+  cursor:pointer;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 48px;
+  text-decoration: none;
+}
+.room-grade ul li.active a:active {
+  background-color: #d1c192;
+  border: 2px #d1c192 solid;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  border-radius: 17px;
+  cursor:pointer;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 48px;
+  text-decoration: none;
+}
+.room-grade ul li a:link {
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
   -webkit-border-radius: 17px;
@@ -263,7 +299,7 @@ h2 span {
   padding: 8px 48px;
   text-decoration: none;
 }
-.room-grade-button a:visited {
+.room-grade ul li a:visited {
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
   -webkit-border-radius: 17px;
@@ -274,7 +310,7 @@ h2 span {
   padding: 8px 48px;
   text-decoration: none;
 }
-.room-grade-button a:hover {
+.room-grade ul li a:hover {
   background-color: rgba(209,193,146,0.3);
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
@@ -290,7 +326,7 @@ h2 span {
   padding: 8px 48px;
   text-decoration: none;
 }
-.room-grade-button a:active {
+.room-grade ul li a:active {
   background-color: rgba(209,193,146,0.3);
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
