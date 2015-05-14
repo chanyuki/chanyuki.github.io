@@ -542,7 +542,26 @@ h5 {
 }
 .reserve-list dd {
   float: left;
-  margin-top: 9px;
+  margin-top: 7px;
+}
+select{
+  cursor:pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: .01px;
+  text-overflow: "";
+  color: #B3B3B3;
+  height: 23px;
+  font-size: 100%;
+  padding: 0px 24px 1px 6px;
+  border: 1px solid #B3B3B3;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  background: #FFF url(../images/select.png) no-repeat right;
 }
 .search-button, .check-button {
   float: right;
