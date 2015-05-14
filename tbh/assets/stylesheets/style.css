@@ -120,6 +120,7 @@ h5 {
   margin-top: 7px;
 }
 select{
+  cursor:pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
