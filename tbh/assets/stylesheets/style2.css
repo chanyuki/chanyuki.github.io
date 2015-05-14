@@ -327,6 +327,156 @@ h2 span {
   margin: 10px 0 0 5px;
 }
 
+
+.info-cont1 {
+  border-top: 1px rgba(0,0,0,0.1) solid;
+  padding: 34px 0 40px 0;
+  overflow: hidden;
+}
+.info-cont1 li:before {
+  content: "・";
+  color: rgba(0,0,0,0.3);
+}
+
+.info-cont1-left {
+  float: left;
+  width: 332px;
+  margin-left: 100px;
+}
+.i-c1-l-wrap {
+  padding-top: 15px;
+  overflow: hidden;
+}
+.i-c1-l-left {
+  float: left;
+  width: 142px;
+}
+.i-c1-l-left li {
+  line-height: 3;
+}
+.i-c1-l-right {
+  float: right;
+  width: 190px;
+}
+.i-c1-l-right li {
+  line-height: 3;
+}
+.i-c1-l-right li span {
+  display: block;
+  line-height: 0.5;
+}
+/* info1 left */
+
+.info-cont1-right {
+  float: right;
+  width: 236px;
+  margin-right: 100px;
+}
+.i-c1-r-wrap {
+  padding-top: 15px;
+  overflow: hidden;
+}
+.i-c1-r-left {
+  float: left;
+  width: 140px;
+}
+.i-c1-r-left li {
+  line-height: 3;
+}
+.i-c1-r-right {
+  float: right;
+  width: 96px;
+}
+.i-c1-r-right li {
+  line-height: 3;
+}
+/* info1 right */
+/* info1 */
+
+.info-cont2 {
+  clear: both;
+  border-top: 1px rgba(0,0,0,0.1) solid;
+  padding: 34px 0 40px 0;
+  overflow: hidden;
+}
+.info-cont2 li:before {
+  content: "・";
+  color: rgba(0,0,0,0.3);
+}
+.free {
+  margin-bottom: -5px;
+}
+.info-cont2-title {
+  float: left;
+  width: 332px;
+  margin-left: 100px;
+  padding-bottom: 20px;
+}
+.info-cont2-left {
+  float: left;
+  width: 332px;
+  margin-left: 100px;
+  padding-top: 5px;
+}
+.i-c2-l-wrap {
+  padding-top: 15px;
+  overflow: hidden;
+}
+.i-c2-l-left {
+  float: left;
+  width: 142px;
+}
+.i-c2-l-left li {
+  line-height: 3;
+}
+.i-c2-l-right {
+  float: right;
+  width: 190px;
+}
+.i-c2-l-right li {
+  line-height: 3;
+}
+.i-c2-l-right li span {
+  display: block;
+  line-height: 0.5;
+}
+/* info2 left */
+
+.info-cont2-right {
+  float: right;
+  width: 290px;
+  margin-right: 100px;
+  padding-top: 5px;
+}
+.charge {
+  margin-bottom: -5px;
+}
+.i-c2-r-wrap {
+  padding-top: 15px;
+  overflow: hidden;
+}
+.i-c2-r-left li {
+  line-height: 3;
+}
+.i-c2-r-left li span {
+  padding-left: 13px;
+  margin-top: -2px;
+  display: block;
+  line-height: 2;
+}
+.i-c2-r-left li.pc {
+  margin-top: 8px;
+}
+/* info2 right */
+/* info2 */
+
+
+h6 {
+  font-size: 18px;
+  font-family: "ヒラギノ明朝 Pro","Hiragino Mincho Pro";
+}
+/* info */
+
 .reserve_wrapper {
   width: 100%;
   height: 37px;
