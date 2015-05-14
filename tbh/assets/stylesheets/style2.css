@@ -215,8 +215,11 @@ h2 span {
   display: inline-block;
 }
 .thumbnail img {
-  width: 100px;
-  height: 100px;
+  background: center center　no-repeat;
+  margin: 10px 10px 0 10px;
+  width: 149px;
+  height: 54px;
+  border: 1px solid #ccc;
 }
 
 
@@ -227,7 +230,7 @@ h2 span {
   padding-bottom: 60px;
 }
 .roomtype-copy {
-  padding: 36px 0 26px 0;
+  padding: 20px 0 26px 0;
 }
 .roomtype-caption_wrapper p {
   line-height: 2;
