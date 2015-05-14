@@ -6,6 +6,16 @@ body {
   font-weight: normal;
 }
 
+.inner {
+  width: 860px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+/*----------------------------------------
+    header
+-----------------------------------------*/
 header {
   width: 100%;
   height: 60px;
@@ -15,15 +25,14 @@ header {
   color: #fff;
   font-size: 16px;
 }
-.inner {
-  width: 860px;
-  margin: 0 auto;
-  overflow: hidden;
-}
 header h1 {
   float:left;
 }
 
+
+/*----------------------------------------
+    nav
+-----------------------------------------*/
 nav {
   float: right;
   margin-top: 4px;
@@ -95,12 +104,18 @@ nav p {
   margin-left: 30px;
 }
 
+
+/*----------------------------------------
+    roomtype
+-----------------------------------------*/
 .roomtype-main_wrapper {
   width: 100%;
   height: 48px;
   background-color: #fff;
   padding: 10px 0 44px 0;
 }
+
+/* breadcrumbs */
 .breadcrumbs {
   margin-bottom: 30px;
   color: #ccc;
@@ -136,6 +151,7 @@ nav p {
   transition: background-color, .2s;
 }
 
+/* roomtype name */
 .roomtype-main-left {
   float: left;
   width: 365px;
@@ -198,6 +214,10 @@ h2 span {
   transition: background-color, .2s;
 }
 
+
+/*----------------------------------------
+    slide
+-----------------------------------------*/
 .roomtype-main-slide {
   clear: both;
   width: 100%;
@@ -223,6 +243,9 @@ h2 span {
 }
 
 
+/*----------------------------------------
+    caption
+-----------------------------------------*/
 .roomtype-caption_wrapper {
   width: 100%;
   height: 146px;
@@ -236,6 +259,10 @@ h2 span {
   line-height: 2;
 }
 
+
+/*----------------------------------------
+    information-1
+-----------------------------------------*/
 .information_wrapper {
   width: 100%;
   height: 910px;
@@ -245,6 +272,7 @@ h2 span {
   color: #666;
 }
 
+/* room grade */
 .room-grade {
   text-align: center;
 }
@@ -252,6 +280,8 @@ h2 span {
   display: inline-block;
   margin: 0 10px 0 10px;
 }
+
+/* room grade _ active tab */
 .room-grade ul li.active a:link {
   background-color: #d1c192;
   border: 2px #d1c192 solid;
@@ -300,6 +330,8 @@ h2 span {
   padding: 8px 48px;
   text-decoration: none;
 }
+
+/* room grade _ link tab */
 .room-grade ul li a:link {
   border: 2px #d1c192 solid;
   -moz-border-radius: 17px;
@@ -355,6 +387,7 @@ h2 span {
   text-decoration: none;
 }
 
+/* room grade _ tab page */
 .room-info_inner {
   margin: 25px 0;
 }
@@ -376,6 +409,15 @@ h2 span {
 }
 
 
+/*----------------------------------------
+    information-2
+-----------------------------------------*/
+h6 {
+  font-size: 18px;
+  font-family: "ヒラギノ明朝 Pro","Hiragino Mincho Pro";
+}
+
+/* info1 */
 .info-cont1 {
   border-top: 1px rgba(0,0,0,0.1) solid;
   padding: 34px 0 40px 0;
@@ -386,6 +428,7 @@ h2 span {
   color: rgba(0,0,0,0.3);
 }
 
+/* info1 left */
 .info-cont1-left {
   float: left;
   width: 332px;
@@ -413,8 +456,8 @@ h2 span {
   display: block;
   line-height: 0.5;
 }
-/* info1 left */
 
+/* info1 right */
 .info-cont1-right {
   float: right;
   width: 236px;
@@ -438,9 +481,9 @@ h2 span {
 .i-c1-r-right li {
   line-height: 3;
 }
-/* info1 right */
-/* info1 */
 
+
+/* info2 */
 .info-cont2 {
   clear: both;
   border-top: 1px rgba(0,0,0,0.1) solid;
@@ -460,6 +503,8 @@ h2 span {
   margin-left: 100px;
   padding-bottom: 20px;
 }
+
+/* info2 left */
 .info-cont2-left {
   float: left;
   width: 332px;
@@ -488,8 +533,8 @@ h2 span {
   display: block;
   line-height: 0.5;
 }
-/* info2 left */
 
+/* info2 right */
 .info-cont2-right {
   float: right;
   width: 290px;
@@ -515,16 +560,11 @@ h2 span {
 .i-c2-r-left li.pc {
   margin-top: 8px;
 }
-/* info2 right */
-/* info2 */
 
 
-h6 {
-  font-size: 18px;
-  font-family: "ヒラギノ明朝 Pro","Hiragino Mincho Pro";
-}
-/* info */
-
+/*----------------------------------------
+    reserve
+-----------------------------------------*/
 .reserve_wrapper {
   width: 100%;
   height: 37px;
@@ -566,11 +606,10 @@ select{
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   background: #FFF url(../images/select.png) no-repeat right;
 }
+
+/* search-button */
 .search-button {
   float: left;
-}
-.check-button {
-  float: right;
 }
 .search-button a:link {
 	-moz-box-shadow:inset 0px 0px 1px 0px #ffffff;
@@ -671,6 +710,11 @@ select{
   padding:10px 28px;
 	text-decoration:none;
   position: relative;
+}
+
+/* check-button */
+.check-button {
+  float: right;
 }
 .check-button a:link {
 	-moz-box-shadow:inset 0px 0px 1px 0px #ffffff;
@@ -773,6 +817,10 @@ select{
   position: relative;
 }
 
+
+/*----------------------------------------
+    plan
+-----------------------------------------*/
 .plan_wrapper {
   width: 100%;
   height: 477px;
@@ -784,6 +832,8 @@ select{
   text-align: center;
   margin-bottom: 34px;
 }
+
+/* plan list */
 .plan {
   margin-right: 31px;
   float: left;
@@ -923,6 +973,7 @@ figure {
 	text-decoration: none;
 }
 
+/* more view */
 .more-all_wrapper {
   width: 100%;
   height: 60px;
@@ -934,7 +985,6 @@ figure {
   bottom: 0;
   position: absolute;
 }
-
 .more-all_wrapper .more p {
   font-size: 12px;
   background: url(../images/chevron.png) left center no-repeat;
@@ -963,59 +1013,10 @@ figure {
   -o-transition: background-color, .2s;
 }
 
-.news_wrapper {
-  width: 100%;
-  height: 515px;
-  background-color: #fff;
-  padding: 44px 0 44px 0;
-}
-.news_wrapper dl {
-  border-bottom: 1px rgba(0,0,0,0.1) solid;
-  padding: 23px 0;
-  overflow: hidden;
-}
-.news_wrapper dl:nth-child(4){
-  border-bottom: none;
-}
-.news_wrapper dt {
-  float: left;
-  width: 90px;
-  background-color: #f7f0d5;
-  padding: 6px 0;
-  text-align: center;
-}
-.news-ymd {
-  float: left;
-  width: 102px;
-  padding: 6px 0;
-  margin-left: 25px;
-}
-.news-cont {
-  float: left;
-  width: 613px;
-  padding: 6px 0;
-}
-.news-cont a:link {
-  color: #666;
-}
-.news-cont a:visited {
-  color: #666;
-}
-.news-cont a:hover {
-  color: #ccc;
-  -moz-transition: background-color, .2s;
-  -webkit-transition: background-color, .2s;
-  -o-transition: background-color, .2s;
-  transition: background-color, .2s;
-}
-.news-cont a:active {
-  color: #ccc;
-  -moz-transition: background-color, .2s;
-  -webkit-transition: background-color, .2s;
-  -o-transition: background-color, .2s;
-  transition: background-color, .2s;
-}
 
+/*----------------------------------------
+    footer
+-----------------------------------------*/
 footer {
   width: 100%;
   height: 258px;
