@@ -105,7 +105,7 @@
             $(this).addClass("active");//クリックタブに.activeを追加
             $(".room-info_inner").hide();//全ての.tab_contentを非表示
             var activeTab = $(this).find("a").attr("href");//アクティブタブコンテンツ
-            $(activeTab).fadeIn();//アクティブタブコンテンツをフェードイン
+            $(activeTab).fadeIn(700);//アクティブタブコンテンツをフェードイン
             return false;
             });
           });
