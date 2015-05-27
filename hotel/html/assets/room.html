@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>東京ベイサイドホテル｜客室</title>
+  <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" media="all">
+  <link rel="stylesheet" type="text/css" href="stylesheets/room.css" media="all">
+  <script type="text/javascript" src="javascripts/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="javascripts/nav.js"></script>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <h1><a href="../index.html"><img src="images/logo.png" alt="東京ベイサイドホテル"></a></h1>
+      <nav>
+        <a href="../index.html">ホーム<span>home</span></a>
+        <a href="#" class="current">客室<span>room</span></a>
+        <a href="#">プラン<span>plan</span></a>
+        <a href="#">レストラン＆バー<span>restaurant & bar</span></a>
+        <a href="#">アクセス<span>access</span></a>
+        <p></p>
+      </nav>
+    </div>
+  </header>
+  <!-- header -->
+
+
+  <div class="roomtype-main_wrapper">
+    <div class="inner">
+      <div class="breadcrumbs">
+        <ol>
+          <li><a href="../index.html">ホーム</a></li>
+          <li><a href="#">客室</a></li>
+          <li>シングルルーム</li>
+        </ol>
+      </div>
+      <section class="roomtype-main-left">
+        <h2>シングルルーム<span>single room</span></h2>
+      </section>
+      <div class="roomtype-main-right">
+        <ul>
+          <li class="active">シングル</li>
+          <li><a href="#">ダブル</a></li>
+          <li><a href="#">ツイン</a></li>
+          <li><a href="#">スイート</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- .roomtype-main_wrapper -->
+
+
+  <div class="roomtype-main-slide">
+    <!-- slide here -->
+  </div>
+  <script>
+    $(function(){
+      $(".thumbnail li") .click(function(){
+          var index = $(".thumbnail li").index(this);
+          console.log(index);
+          var targetImg = $(".thumbnail li:eq("+index+") a").attr("href");
+          $(".roomtype-main-slide").css({'background-image':'url('+targetImg+')'});
+          return false;
+      });
+    });
+  </script>
+  <!-- slide script -->
+  <div class="roomtype-main-slide-thumb">
+    <ul class="thumbnail">
+      <li><a href="images/slider-img1.jpg"><img src="images/slider-img1.jpg" alt=""></a></li>
+      <li><a href="images/slider-img2.jpg"><img src="images/slider-img2.jpg" alt=""></a></li>
+      <li><a href="images/slider-img3.jpg"><img src="images/slider-img3.jpg" alt=""></a></li>
+      <li><a href="images/slider-img4.jpg"><img src="images/slider-img4.jpg" alt=""></a></li>
+    </ul>
+  </div>
+  <!-- thumbnail -->
+  <!-- .roomtype-main-slide -->
+
+
+  <div class="roomtype-caption_wrapper">
+    <div class="inner">
+      <div class="roomtype-copy">
+        <img src="images/room-copy.png" alt="１つ１つにこだわったスタイリッシュなデザインインテリア">
+      </div>
+      <p>スタイリッシュで優れた快適性を感じられるインテリアは、ビジネスユースに最適です。<br>
+          機能的でありながらもどこか安らぎを感じさせるお部屋でごゆっくりお寛ぎ下さい。
+      </p>
+    </div>
+  </div>
+  <!-- .roomtype-caption_wrapper -->
+
+
+  <div class="information_wrapper">
+    <section class="inner">
+      <h3><img src="images/t-roominfo.png" alt="客室情報"></h3>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          //初期表示
+          $(".room-info_inner").hide();//全ての.tab_contentを非表示
+          $(".room-grade ul li:first").addClass("active").show();//tabs内最初のliに.activeを追加
+          $(".room-info_inner:first").show();//最初の.tab_contentを表示
+          //タブクリック時
+          $(".room-grade ul li").click(function() {
+            $(".room-grade ul li").removeClass("active");//.activeを外す
+            $(this).addClass("active");//クリックタブに.activeを追加
+            $(".room-info_inner").hide();//全ての.tab_contentを非表示
+            var activeTab = $(this).find("a").attr("href");//アクティブタブコンテンツ
+            $(activeTab).fadeIn(700);//アクティブタブコンテンツをフェードイン
+            return false;
+            });
+          });
+      </script>
+      <!-- tab script -->
+      <div class="room-grade">
+        <ul>
+          <li><a href="#tab1">スタンダード</a></li>
+          <li><a href="#tab2">スーペリア</a></li>
+        </ul>
+      </div>
+      <!-- tab -->
+
+      <div class="room-info_inner" id="tab1">
+        <div class="room-info_1">
+          <dl class="room-info">
+            <dt><img src="images/info1.png" alt="部屋面積"></dt>
+            <dd>14<span>&#13217;</span></dd>
+          </dl>
+          <dl class="room-info">
+            <dt><img src="images/info2.png" alt="ベッド幅"></dt>
+            <dd>1,300<span>&#13212;</span></dd>
+          </dl>
+          <dl class="room-info">
+            <dt><img src="images/info3.png" alt="基本料金"></dt>
+            <dd>11,481<span>円</span></dd>
+          </dl>
+        </div>
+
+        <div class="room-info_2">
+          <dl class="room-info">
+            <dt><img src="images/info4.png" alt="禁煙フロア"></dt>
+            <dd>なし</dd>
+          </dl>
+          <dl class="room-info">
+            <dt><img src="images/info5.png" alt="バリアフリー部屋"></dt>
+            <dd>なし</dd>
+          </dl>
+        </div>
+      </div>
+      <!-- tab1 page -->
+
+      <div class="room-info_inner" id="tab2">
+        <div class="room-info_1">
+          <dl class="room-info">
+            <dt><img src="images/info1.png" alt="部屋面積"></dt>
+            <dd>16<span>&#13217;</span></dd>
+          </dl>
+          <dl class="room-info">
+            <dt><img src="images/info2.png" alt="ベッド幅"></dt>
+            <dd>1,400<span>&#13212;</span></dd>
+          </dl>
+          <dl class="room-info">
+            <dt><img src="images/info3.png" alt="基本料金"></dt>
+            <dd>12,500<span>円</span></dd>
+          </dl>
+        </div>
+
+        <div class="room-info_2">
+          <dl class="room-info">
+            <dt><img src="images/info4.png" alt="禁煙フロア"></dt>
+            <dd>あり</dd>
+          </dl>
+          <dl class="room-info">
+            <dt><img src="images/info5.png" alt="バリアフリー部屋"></dt>
+            <dd>あり</dd>
+          </dl>
+        </div>
+      </div>
+      <!-- tab2 page -->
+      <!-- .room-grade -->
+
+
+      <div class="info-cont1">
+        <div class="info-cont1-left">
+          <h6>設備</h6>
+          <div class="i-c1-l-wrap">
+            <ul class="i-c1-l-left">
+              <li>シャワートイレ</li>
+              <li>ユニットバス内電話</li>
+              <li>冷蔵庫</li>
+              <li>ズボンプレッサー</li>
+            </ul>
+            <ul class="i-c1-l-right">
+              <li>マイナスイオンドライヤー</li>
+              <li>液晶テレビ</li>
+              <li>インターネット<span>&nbsp;&nbsp;（高速インターネット回線完備）</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-cont1-right">
+          <h6>アメニティ</h6>
+          <div class="i-c1-r-wrap">
+            <ul class="i-c1-r-left">
+              <li>シャンプー</li>
+              <li>コンディショナー</li>
+              <li>ボディーソープ</li>
+            </ul>
+            <ul class="i-c1-r-right">
+              <li>ヘアブラシ</li>
+              <li>ナイトウェア</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-cont2">
+        <div class="info-cont2-title">
+          <h6>レンタル・システム</h6>
+        </div>
+        <div class="info-cont2-left">
+          <div class="free"><img src="images/free.png" alt="無料"></div>
+          <div class="i-c2-l-wrap">
+            <ul class="i-c2-l-left">
+              <li>空気清浄機</li>
+              <li>加湿器</li>
+              <li>電気スタンド</li>
+            </ul>
+            <ul class="i-c2-l-right">
+              <li>アイロン、アイロン台</li>
+              <li>くるくるドライヤー</li>
+              <li>携帯電話充電器</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-cont2-right">
+          <div class="charge"><img src="images/charge.png" alt="有料"></div>
+          <div class="i-c2-r-wrap">
+            <ul class="i-c2-r-left">
+              <li>ビデオ・オン・デマンド（1,000円/1日）<span>お好きな時間に各種ビデオをはじめ、最新ムービーまでお楽しみいただける映像配信システムです。</span></li>
+              <li class="pc">パソコン（1,080円/1泊）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- .information_wrapper -->
+
+
+  <div class="reserve_wrapper">
+    <section class="inner">
+      <div class="reserve-list">
+        <h5><img src="images/t-reserve.png" alt="ご予約"></h5>
+        <form action="reserve.php">
+        <dl>
+          <dt>日程</dt>
+          <dd>
+            <select name="ymd" class="ymd">
+              <option value="20150401">2015年04月1日</option>
+              <option value="20150402">2015年04月2日</option>
+            </select>
+          </dd>
+          <dt>泊数</dt>
+          <dd>
+            <select name="accommodation" class="accommodation">
+              <option value="aco1">1日</option>
+              <option value="aco2">2日</option>
+            </select>
+          </dd>
+          <dt>大人</dt>
+          <dd>
+            <select name="adalt" class="adalt">
+              <option value="ad1">1人</option>
+              <option value="ad2">2人</option>
+            </select>
+          </dd>
+          <dt>子供</dt>
+          <dd>
+            <select name="child" class="child">
+              <option value="ch1">1人</option>
+              <option value="ch2">2人</option>
+            </select>
+          </dd>
+        </dl>
+        <div class="search-button"><a href="#">検索</a></div>
+        <div class="check-button"><a href="#">ご予約の確認・取り消し</a></div>
+        </form>
+      </div>
+    </section>
+  </div>
+  <!-- .reserve_wrapper -->
+
+
+  <div class="plan_wrapper">
+    <section class="inner">
+    <h3><img src="images/t-roomplan.png" alt="おすすめプラン"></h3>
+
+      <div class="plan">
+        <figure>
+          <a href="#" class="thumb">
+            <img src="images/plan-1.jpg" alt="記念日プラン">
+          </a>
+        </figure>
+        <div class="caption">
+          <h4>記念日プラン</h4>
+          <p>恋人やご友人との特別な日に<br>スペシャルな時間を</p>
+          <div class="more-button">
+            <a href="#">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan">
+        <figure>
+          <a href="#" class="thumb">
+            <img src="images/plan-2.jpg" alt="美食プラン">
+          </a>
+        </figure>
+        <div class="caption">
+          <h4>美食プラン</h4>
+          <p>美味しさと健康にこだわった<br>当ホテル自慢のお食事</p>
+          <div class="more-button">
+            <a href="#">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan">
+        <figure>
+          <a href="#" class="thumb">
+            <img src="images/plan-3.jpg" alt="癒しプラン">
+          </a>
+        </figure>
+        <div class="caption">
+          <h4>癒しプラン</h4>
+          <p>優しいアロマに包まれながら<br>本格的なマッサージを体験</p>
+          <div class="more-button">
+            <a href="#">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan">
+        <figure>
+          <a href="#" class="thumb">
+            <img src="images/plan-4.jpg" alt="ビジネスプラン">
+          </a>
+        </figure>
+        <div class="caption">
+          <h4>ビジネスプラン</h4>
+          <p>シンプルにご宿泊できる<br>お得な定番プラン</p>
+          <div class="more-button">
+            <a href="#">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-all_wrapper">
+        <div class="more">
+          <a href="#">
+            <p class="chevron">全てのプランを見る</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- .plan_wrapper -->
+
+
+  <footer>
+    <div class="inner">
+      <div class="favor-nav">
+        <ul>
+          <li class="chevron2"><a href="#">サイトマップ</a></li>
+          <li class="chevron2"><a href="#">お問い合わせ</a></li>
+          <li class="chevron2"><a href="#">プライバシーポリシー</a></li>
+        </ul>
+        <ul>
+          <li class="lang"><a href="#">English</a></li>
+          <li class="lang"><a href="#">中文（筒体字）</a></li>
+          <li class="lang"><a href="#">中文（繁体字）</a></li>
+        </ul>
+      </div>
+      <h1><img src="images/logo-2.png" alt="東京ベイサイドホテル"></h1>
+      <p>〒135-0063&nbsp;東京都江東区有明3丁目1番15号<br>
+          TEL：03-6700-0001（代表）&nbsp;&nbsp;FAX：03-6700-0007</p>
+      <p class="credit"><small>&copy;&nbsp;Tokyo Bayside Hotel</small></p>
+    </div>
+  </footer>
+</body>
+</html>
