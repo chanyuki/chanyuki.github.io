@@ -1,23 +1,23 @@
 $(function() {
   /* current */
-	$('nav p').css({
-		width: $('nav .current').outerWidth(),
-		left: $('nav .current').position().left
+	$('.nav-wripper p').css({
+		width: $('.nav-wripper .current').outerWidth(),
+		left: $('.nav-wripper .current').position().left
 	});
   /* mouseover */
-	$('nav a').mouseover(function(){
-		$('nav p').stop().animate({
+	$('.nav-wripper a').mouseover(function(){
+		$('.nav-wripper p').stop().animate({
 			width: $(this).outerWidth(),
 			left: $(this).position().left}
 		,'fast');
 	});
   /* mouseout */
-	$('nav a').mouseout(function(){
-		$('nav p')
+	$('.nav-wripper a').mouseout(function(){
+		$('.nav-wripper p')
 			.stop()
 			.animate({
-				width: $('nav .current').outerWidth(),
-				left: $('nav .current').position().left}
+				width: $('.nav-wripper .current').outerWidth(),
+				left: $('.nav-wripper .current').position().left}
 			,'fast');
 	});
 })
