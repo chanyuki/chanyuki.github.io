@@ -6,14 +6,17 @@
 <link rel="stylesheet" href="css/reset.css">
 <style>
 .movie{
-	width: 1136px; /*ここに動画の横幅をいれる*/
+	width:960px; /*ここに動画の横幅をいれる*/
 	margin: 0 auto;
+}
+video{
+	width:960px; /*ここに動画の横幅をいれる*/
 }
 </style>
 </head>
 <body>
 <div class="movie">
-	<video autoplay loop="loop">
+	<video autoplay loop="loop" controls>
 		<source src="movie.mp4" type="video/mp4">
 	</video>
 </div>
